@@ -1,22 +1,22 @@
 import { IConfigService } from "../config/IConfigService.js";
 import { Chickle, ChickleDocuments } from "../impl/Chickle.js";
-import { WebService } from "../impl/rxdb/web.js";
-import { ActorService } from "../impl/rxdb/actors.js";
-import { SignatureService } from "../impl/rxdb/signature.js";
+import { WebService } from "../impl/pigmo/web.js";
+import { ActorService } from "../impl/pigmo/actors.js";
+import { SignatureService } from "../impl/pigmo/signature.js";
 import { NsActivityStreams } from "../ld/ActivityStreams.js";
 import { ISignatureService, SignatureKey } from "../signatures/ISignatureService.js";
-import { NoteService } from "../impl/rxdb/notes.js";
-import { InboxItem, InboxService } from "../impl/rxdb/inbox.js";
+import { NoteService } from "../impl/pigmo/notes.js";
+import { InboxItem, InboxService } from "../impl/pigmo/inbox.js";
 import { serve } from "@hono/node-server";
 import { exportPrivateKeyPem, exportPublicKeyPem, importPrivateKey, importPublicKey } from "@misskey-dev/node-http-message-signatures";
 import { IActor } from "../actors/IActorService.js";
 
 import { Pigmo, schema } from "@ikasoba000/pigmo";
 import { Sqlite3Engine } from "@ikasoba000/pigmo/engines/sqlite3";
-import { OutboxItem, OutboxService } from "../impl/rxdb/outbox.js";
+import { OutboxItem, OutboxService } from "../impl/pigmo/outbox.js";
 import { INote } from "../notes/INoteService.js";
 
-import { DeliverService } from "../impl/rxdb/deliver.js";
+import { DeliverService } from "../impl/pigmo/deliver.js";
 
 const config: IConfigService = {
   port: "8080",

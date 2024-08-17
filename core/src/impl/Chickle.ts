@@ -4,7 +4,7 @@ import { Schema, createValidator, normalize } from "../JsonLd.js";
 import { LdActivityStreams } from "../ld/ActivityStreams.js";
 import { LdW3idSecurity } from "../ld/w3id.js";
 import { IActivity, IInboxService } from "../inbox/IInboxSeervice.js";
-import { AsActivity } from "./rxdb/inbox.js";
+import { AsActivity } from "./pigmo/inbox.js";
 import { IOutboxService } from "../outbox/IOutboxService.js";
 import { INoteService } from "../notes/INoteService.js";
 import { IWebService } from "../web/IWebService.js";

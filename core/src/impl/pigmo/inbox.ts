@@ -1,6 +1,6 @@
 import { PigmoCollection } from "@ikasoba000/pigmo/PigmoCollection";
 import { IActivity, IInboxService, PushEvent } from "../../inbox/IInboxSeervice.js";
-import { QueryFn } from "../rxdb/helper.js";
+import { QueryFn } from "../pigmo/helper.js";
 import { INote, INoteService } from "../../notes/INoteService.js";
 import { AsNote } from "./notes.js";
 import { IConfigService } from "../../config/IConfigService.js";
