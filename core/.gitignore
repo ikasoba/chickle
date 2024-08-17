@@ -1,0 +1,6 @@
+**/*.js
+**/*.d.ts
+**/pnpm-lock.yaml
+*.db
+*.sqlite3
+node_modules/

@@ -1,0 +1,21 @@
+{
+	"type": "module",
+	"name": "chickle-core",
+	"private": true,
+	"scripts": {
+		"build": "tsc --build",
+		"watch": "tsc --watch"
+	},
+	"devDependencies": {
+		"@types/node": "^22.3.0",
+		"typescript": "^5.5.4"
+	},
+	"dependencies": {
+		"@hono/node-server": "^1.12.0",
+		"@ikasoba000/pigmo": "^0.1.3",
+		"@misskey-dev/node-http-message-signatures": "^0.0.10",
+		"@peertube/http-signature": "^1.7.0",
+		"hono": "^4.5.5",
+		"lizod": "^0.2.7"
+	}
+}
